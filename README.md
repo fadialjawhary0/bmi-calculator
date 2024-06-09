@@ -1,1 +1,1 @@
-Live Demo:
+Live Demo: https://bmi-calculator-fadi.vercel.app/
