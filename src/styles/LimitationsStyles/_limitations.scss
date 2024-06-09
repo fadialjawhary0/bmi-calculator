@@ -1,0 +1,147 @@
+@use '../global' as *;
+
+.limitations-container {
+  display: flex;
+  padding: 12rem 0 0 12rem;
+
+  @media (width <= 1350px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 12rem 4rem;
+  }
+}
+
+.limitations-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  max-width: 40.9%;
+  height: fit-content;
+
+  @media (width <= 1350px) {
+    max-width: unset;
+    width: 100%;
+    text-align: center;
+    gap: 3.2rem;
+  }
+}
+
+.limitations-cards {
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  row-gap: 2.4rem;
+  column-gap: 3.2rem;
+  grid-template-areas:
+    '. . gender-card'
+    '. age-card muscle-card'
+    'pregnancy-card race-card .';
+  right: 0;
+  position: absolute;
+
+  @media (width <= 1350px) {
+    position: unset;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .gender-card,
+    .age-card,
+    .muscle-card,
+    .pregnancy-card,
+    .race-card {
+      flex: 1 1 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+
+    .pregnancy-card {
+      flex: 1 1 0 100%;
+    }
+  }
+
+  @media (width <= 775px) {
+    .gender-card,
+    .age-card,
+    .muscle-card,
+    .pregnancy-card,
+    .race-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.card {
+  padding: 3.2rem;
+  width: 36.5rem;
+  background-color: $white-color;
+  box-shadow: 1.6rem 3.2rem 5.6rem #90afd040;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+}
+
+.gender-card {
+  grid-area: gender-card;
+  transform: translateX(-75%);
+  z-index: -10;
+
+  @media (width <= 1350px) {
+    transform: none;
+    z-index: unset;
+  }
+}
+
+.muscle-card {
+  grid-area: muscle-card;
+  transform: translateX(-50%);
+  z-index: -10;
+
+  @media (width <= 1350px) {
+    transform: none;
+    z-index: unset;
+  }
+}
+
+.age-card {
+  grid-area: age-card;
+  transform: translateX(-50%);
+  z-index: -10;
+
+  @media (width <= 1350px) {
+    transform: none;
+    z-index: unset;
+  }
+}
+
+.pregnancy-card {
+  grid-area: pregnancy-card;
+  justify-self: center;
+
+  @media (width <= 1350px) {
+    justify-self: unset;
+  }
+}
+
+.race-card {
+  grid-area: race-card;
+  justify-self: center;
+
+  @media (width <= 1350px) {
+    justify-self: unset;
+  }
+}

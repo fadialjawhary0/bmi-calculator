@@ -1,0 +1,27 @@
+@use '../global/' as *;
+
+@mixin input-styles {
+  padding: 2rem 2.4rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(163, 163, 163, 0.568);
+  width: 100%;
+  height: 6.9rem;
+  cursor: pointer;
+  outline-color: $blue-color;
+
+  @media (width <= 500px) {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@mixin result-styles {
+  width: 100%;
+  background-color: $blue-color;
+  color: $white-color;
+  padding: 3.2rem;
+  border-radius: 2rem 10rem 10rem 2rem;
+
+  @media (width <= 500px) {
+    border-radius: 2rem 2rem 2rem 2rem;
+  }
+}

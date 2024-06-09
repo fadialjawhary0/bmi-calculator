@@ -1,0 +1,48 @@
+@use '../global/' as *;
+@use '../mixins/' as mixins;
+
+.welcome-container {
+  @include mixins.result-styles;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  h4 {
+    color: $white-color;
+  }
+  p {
+    font-weight: 300;
+  }
+}
+
+.result-container {
+  @include mixins.result-styles;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    .body-m {
+      color: $white-color;
+    }
+
+    @media (width <= 500px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .weight-suggestion {
+      width: 20rem;
+      font-weight: 300;
+
+      @media (width <= 500px) {
+        width: 95%;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

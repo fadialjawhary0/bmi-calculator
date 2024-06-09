@@ -1,0 +1,64 @@
+@use '../global' as *;
+
+.hero-container {
+  width: 75%;
+  height: 73rem;
+  border-end-end-radius: 3rem;
+  border-end-start-radius: 3rem;
+  background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+  position: relative;
+
+  @media (width <= 1300px) {
+    width: 100%;
+  }
+}
+
+.hero-logo {
+  width: 6.4rem;
+  height: 6.4rem;
+  position: absolute;
+  top: 7.4rem;
+  left: 14rem;
+
+  @media (width <= 1300px) {
+    width: 4rem;
+    height: 4rem;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 65%;
+  position: absolute;
+  top: 26.9rem;
+  left: 14rem;
+
+  h1 {
+    color: $gunmetal-color;
+  }
+
+  p {
+    color: $electric-blue-color;
+    width: 70%;
+  }
+
+  @media (width <= 1300px) {
+    width: 90%;
+    text-align: center;
+    top: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    h1 {
+      font-size: $heading-l;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+}
