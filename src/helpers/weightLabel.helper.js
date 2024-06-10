@@ -1,4 +1,4 @@
-import { BmiLimits } from '../constants/bmiLimits';
+import { BmiLimits } from '../constants/bmiLimits.const';
 
 export const GetWeightLabel = bmi => {
   if (bmi < BmiLimits.UNDERWEIGHT.max) {
