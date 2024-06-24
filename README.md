@@ -1,5 +1,5 @@
 # Body Mass Index Calculator - Frontend Mentor
-This solution addresses the [Body Mass Index Calculator challenge from Frontend Mentor]([https://www.frontendmentor.io/challenges](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T)). These challenges are designed to enhance your coding skills by engaging you in realistic projects.
+This solution addresses the [Body Mass Index Calculator challenge from Frontend Mentor]([https://www.frontendmentor.io/challenges](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T)).
 
 ## The Challenge
 - Choose between metric or imperial units.
